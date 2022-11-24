@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3:4.10.3
 LABEL authors="Sreeram Peela" \
-      description="Docker image for seq-seq-pan (https://gitlab.com/rki_bioinformatics/seq-seq-pan)"
+      description="Docker image for seq-seq-pan and panpasco"
 RUN apt update; apt install -y  gcc procps jq
 RUN conda config --add channels defaults
 RUN conda config --add channels bioconda
